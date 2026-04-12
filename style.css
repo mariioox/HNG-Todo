@@ -90,6 +90,15 @@ hr {
 }
 
 /* 3. Task Grid & Card Styling */
+.section-header {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
 .todo-list-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));

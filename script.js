@@ -1,4 +1,15 @@
-let todos = [];
+let todos = [
+  {
+    id: 1,
+    title: "Stage 0 Todo Item",
+    description: "This is an example task to demonstrate howthe todo works.",
+    priority: "High",
+    deadline: "2026-04-16T18:00",
+    completed: false,
+  },
+];
+
+window.addEventListener("DOMContentLoaded", renderTodos);
 
 function getTimeRemaining(deadline) {
   const now = new Date();
