@@ -2,7 +2,7 @@ let todos = [
   {
     id: 1,
     title: "Stage 0 Todo Item",
-    description: "This is an example task to demonstrate howthe todo works.",
+    description: "This is an example task to demonstrate how the todo works.",
     priority: "High",
     deadline: "2026-04-16T18:00",
     completed: false,
