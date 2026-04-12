@@ -64,8 +64,8 @@ function createTodoCard(todo) {
                     <span>Done</span>
                 </label>
                 <div class="btn-group">
-                    <button data-testid="test-todo-edit-button">Edit</button>
-                    <button data-testid="test-todo-delete-button" class="delete-btn">Delete</button>
+                    <button data-testid="test-todo-edit-button" aria-label="Edit todo button">Edit</button>
+                    <button data-testid="test-todo-delete-button" class="delete-btn" aria-label="Delete todo button">Delete</button>
                 </div>
             </div>
         </article>
