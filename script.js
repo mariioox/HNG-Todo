@@ -91,7 +91,7 @@ function createTodoCard(todo) {
       <div class="priority-indicator" data-testid="test-todo-priority-indicator"></div>    
       <header>
         <h2 data-testid="test-todo-title" style="text-decoration: ${isDone ? "line-through" : "none"}">${todo.title}</h2>
-        <span class="priority-badge" data-testid="test-todo-priority">${todo.priority}</span>
+        <span class="priority-badge ${todo.priority.toLowerCase()}" data-testid="test-todo-priority">${todo.priority}</span>
       </header>
 
       <div class="description-container">
@@ -139,11 +139,11 @@ document.getElementById("todo-list").addEventListener("click", (e) => {
     todo.isEditing = true;
     renderTodos();
   }
-
+  // Cancel Edit
   if (e.target.dataset.testid === "test-todo-cancel-button") {
     todo.isEditing = false;
     renderTodos();
-    // Accessibility: Return focus to edit button
+    // Returns focus to edit button
     setTimeout(
       () =>
         document

@@ -145,15 +145,15 @@ hr {
 /* The indicator is a thick line on the left side of the card */
 .todo-card.high {
   border-left-color: #ef4444;
-} /* Red */
+}
 .todo-card.medium {
   border-left-color: #f59e0b;
-} /* Orange */
+}
 .todo-card.low {
   border-left-color: #10b981;
-} /* Green */
+}
 
-/* 2. Overdue Indicator Styling */
+/* Overdue Indicator Styling */
 .overdue-label {
   color: #ef4444;
   font-weight: bold;
@@ -163,16 +163,27 @@ hr {
   padding: 2px 8px;
   border-radius: 4px;
   border: 1px solid #ef4444;
-  margin-left: 10px;
 }
 
-/* 3. Priority Badge Styling (Optional polish) */
+/* Priority Badge Styling */
 .priority-badge {
   font-size: 0.8rem;
   padding: 2px 8px;
   border-radius: 12px;
   background: #f1f5f9;
   color: #475569;
+}
+.priority-badge.high {
+  background: #fee2e2;
+  color: #ef4444;
+}
+.priority-badge.medium {
+  background: #fef3c7;
+  color: #f59e0b;
+}
+.priority-badge.low {
+  background: #d1fae5;
+  color: #10b981;
 }
 
 .todo-details {
@@ -195,14 +206,14 @@ hr {
 }
 
 .tag-list li {
-  background: #eff6ff;
+  background: #ecf4ff;
   padding: 0.2rem 0.6rem;
   border-radius: 4px;
   font-size: 0.8rem;
   font-weight: 500;
 }
 
-/* 5. Controls & Buttons */
+/* Controls & Buttons */
 .todo-actions {
   display: flex;
   justify-content: space-between;
@@ -238,7 +249,7 @@ hr {
   background: #ecf6ff;
 }
 
-/* 6. Responsive Adjustments */
+/* Responsive Adjustments */
 @media (max-width: 480px) {
   .form-row {
     grid-template-columns: 1fr;
@@ -272,10 +283,11 @@ hr {
   margin-top: 4px;
   text-decoration: underline;
 }
+
 /* Distinct style for In Progress */
 .todo-card.in-progress {
-  background-color: #f0f9ff; /* Light blue tint */
-  border-style: dashed; /* Dashed border for active feeling */
+  background-color: #f0f9ff;
+  border-style: dashed;
   border-color: #3b82f6;
 }
 
